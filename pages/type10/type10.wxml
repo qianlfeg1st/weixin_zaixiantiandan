@@ -1,0 +1,81 @@
+<view class="box" style="margin: 40rpx 0 0 0;">
+  <view class="box__wrap">
+    <view class="box__model" bindtap="toLine" data-type="model10">
+      <view class="box__left">查看范本</view>
+    </view>
+  </view>
+</view>
+
+<view class="box">
+  <view class="box__title">申请人列表</view>
+  <view class="box__wrap" style="padding: 0 0 30rpx;" wx:for="{{ personAData }}" wx:key="key">
+    <view wx:if="{{ item.type === '自然人' }}">
+      <view class="box__input">
+        <view class="box__left">姓名</view>
+        <input class="box__right" placeholder="张三" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="name" data-index="{{ index }}" value="{{ item.name }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">性别</view>
+        <input class="box__right" placeholder="男" type="text" maxlength="1" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="sex" data-index="{{ index }}" value="{{ item.sex }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">民族</view>
+        <input class="box__right" placeholder="汉族" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="nation" data-index="{{ index }}" value="{{ item.nation }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">身份证号</view>
+        <input class="box__right" placeholder="3308202001010171" type="idcard" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="idno" data-index="{{ index }}" value="{{ item.idno }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">出生年月</view>
+        <picker class="box__right" mode="date" value="{{ personAData[index].birthday }}" bindchange="inputPerson" data-mode="persona" data-type="birthday" data-index="{{ index }}">
+          <view>{{ personAData[index].birthday }}</view>
+        </picker>
+      </view>
+      <view class="box__input">
+        <view class="box__left">联系电话</view>
+        <input class="box__right" placeholder="15858155160" type="number" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="phone" data-index="{{ index }}" value="{{ item.phone }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">地址</view>
+        <input class="box__right" placeholder="浙江省杭州市温州村1幢14单元501室" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="address" data-index="{{ index }}" value="{{ item.address }}" />
+      </view>
+    </view>
+    <view wx:if="{{ item.type === '法人' }}">
+      <view class="box__input">
+        <view class="box__left">企业名称</view>
+        <input class="box__right" placeholder="" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="name" data-index="{{ index }}" value="{{ item.name }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">法人或负责人</view>
+        <input class="box__right" placeholder="" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="head" data-index="{{ index }}" value="{{ item.head }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">地址</view>
+        <input class="box__right" placeholder="" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="address" data-index="{{ index }}" value="{{ item.address }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">联系电话</view>
+        <input class="box__right" placeholder="" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="phone" data-index="{{ index }}" value="{{ item.phone }}" />
+      </view>
+      <view class="box__input">
+        <view class="box__left">组织机构代码</view>
+        <input class="box__right" placeholder="" type="text" placeholder-class="holder" bindinput="inputPerson" data-mode="persona" data-type="orgcode" data-index="{{ index }}" value="{{ item.orgcode }}" />
+      </view>
+    </view>
+    <view class="box__delete" data-index="{{ index }}" bindtap="deletePerson" data-mode="persona">删除</view>
+  </view>
+  <view class="box__add" bindtap="addPerson" data-mode="persona">添加申请人</view>
+</view>
+
+<view class="box">
+  <view class="box__title">请求事项</view>
+  <textarea class="box__textarea" adjust-position="true" maxlength="-1" bindinput="requestsInput" placeholder="缓交诉讼费用...元" />
+</view>
+
+<view class="box">
+  <view class="box__title">事实与理由</view>
+  <textarea class="box__textarea" adjust-position="true" maxlength="-1" bindinput="reasonsInput" placeholder="...(写明案件当事人和案由)一案，...(写明申请缓交诉讼费用的事实和理由)" />
+</view>
+
+<button class="postBtn" type="primary" bindtap="postData">提交</button>

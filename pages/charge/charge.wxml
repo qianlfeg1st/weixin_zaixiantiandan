@@ -1,0 +1,20 @@
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{ multiIndex }}" range="{{ multiArray }}">
+  <view class="type">
+    <view class="type__item">案件大类：{{ multiArray[0][multiIndex[0]] }}</view>
+    <view class="type__item">案件小类：{{ multiArray[1][multiIndex[1]] }}</view>
+  </view>
+</picker>
+
+<view class="base">
+  <view class="base__left">基数：</view>
+  <!-- <view class="base__right"></view> -->
+  <input class="base__right" bindinput="bindinput1" type="idcard" placeholder-class="placeholder" placeholder="人格权100-500，离婚50-300" value="{{ baseNum }}" />
+</view>
+
+<view class="base">
+  <view class="base__left" style="width: 26%">案件标的：</view>
+  <!-- <view class="base__right"></view> -->
+  <input class="base__right" bindinput="bindinput2" style="width: 74%" type="idcard" />
+</view>
+
+<button class="btn" type="primary" bindtap="calculate">开始计算</button>

@@ -1,0 +1,83 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/my",
+    "pages/list/list",
+    "pages/charge/charge",
+    "pages/demo/demo",
+    "pages/demo2/demo2",
+    "pages/orders/orders",
+    "pages/query/query",
+    "pages/type01/type01",
+    "pages/type02/type02",
+    "pages/type03/type03",
+    "pages/type04/type04",
+    "pages/type05/type05",
+    "pages/type06/type06",
+    "pages/type07/type07",
+    "pages/type08/type08",
+    "pages/type09/type09",
+    "pages/type10/type10",
+    "pages/type11/type11",
+    "pages/type12/type12",
+    "pages/type13/type13",
+    "pages/type14/type14",
+    "pages/type15/type15",
+    "pages/type16/type16",
+    "pages/type17/type17",
+    "pages/type18/type18",
+    "pages/type19/type19",
+    "pages/type20/type20",
+    "pages/model01/model01",
+    "pages/model02/model02",
+    "pages/model03/model03",
+    "pages/model05/model05",
+    "pages/model06/model06",
+    "pages/model07/model07",
+    "pages/model08/model08",
+    "pages/model09/model09",
+    "pages/model10/model10",
+    "pages/model11/model11",
+    "pages/model12/model12",
+    "pages/model13/model13",
+    "pages/model14/model14",
+    "pages/model15/model15",
+    "pages/model16/model16",
+    "pages/model17/model17",
+    "pages/model18/model18",
+    "pages/model19/model19",
+    "pages/model20/model20"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#23c695",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/index1.png",
+        "iconPath": "images/index0.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/my1.png",
+        "iconPath": "images/my0.png",
+        "pagePath": "pages/my/my",
+        "text": "我的填单"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的填单",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "whtie",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+}

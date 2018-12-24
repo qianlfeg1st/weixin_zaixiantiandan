@@ -1,0 +1,10 @@
+<view class="user">
+  <view class="user__face">
+    <open-data type="userAvatarUrl" class=""></open-data>
+  </view>
+  <open-data type="userNickName" class="user__nick"></open-data>
+</view>
+
+<!-- <view class="items">
+  <view class="items__title"></view>
+</view> -->

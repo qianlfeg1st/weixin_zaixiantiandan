@@ -1,0 +1,32 @@
+<view class="body" style="background-image: url({{ courtname ? background1 : background2 }});">
+  <view class="list">
+    <view class="list__wrap" bindtap="toList">
+      <text class="list__wrapTitle">{{ courtname ? courtname + ' ▼' : '请选择法院 ▼' }}</text>
+    </view>
+  </view>
+
+  <view class="main">
+    <view class="main__title">法院诉讼文书填单小程序 {{ app.data.version }}</view>
+    <view class="main__desc">指导当事人填写诉讼文书，并把文书数据同步到法院填单机，供当事人打印。</view>
+  </view>
+
+  <view class="tool" wx:if="{{ courtname }}">
+    <view class="tool__item" bindtap="toOrders">
+      <image class="tool__itemTop" src="../../images/01.png"></image>
+      <image class="tool__itemBottom" src="../../images/011.png"></image>
+    </view>
+    <view class="tool__item" bindtap="toQuery">
+      <image class="tool__itemTop" src="../../images/03.png"></image>
+      <image class="tool__itemBottom" src="../../images/033.png"></image>
+    </view>
+    <view class="tool__item" bindtap="toDemo">
+      <image class="tool__itemTop" src="../../images/04.png"></image>
+      <image class="tool__itemBottom" src="../../images/044.png"></image>
+    </view>
+    <view class="tool__item" bindtap="toCharge">
+      <image class="tool__itemTop" src="../../images/02.png"></image>
+      <image class="tool__itemBottom" src="../../images/022.png"></image>
+    </view>
+  </view>
+</view>
+

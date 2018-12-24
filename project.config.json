@@ -1,0 +1,209 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.4",
+	"appid": "wxa767b6b2c9224ada",
+	"projectname": "%E5%A1%AB%E5%8D%95",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 27,
+			"list": [
+				{
+					"id": 0,
+					"name": "query",
+					"pathName": "pages/query/query",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/list/list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "charge",
+					"pathName": "pages/charge/charge",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "orders",
+					"pathName": "pages/orders/orders",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type03",
+					"pathName": "pages/type03/type03",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "type02",
+					"pathName": "pages/type02/type02",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type01",
+					"pathName": "pages/type01/type01",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "type04",
+					"pathName": "pages/type04/type04",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type05",
+					"pathName": "pages/type05/type05",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type06",
+					"pathName": "pages/type06/type06",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type07",
+					"pathName": "pages/type07/type07",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type08",
+					"pathName": "pages/type08/type08",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type09",
+					"pathName": "pages/type09/type09",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type10",
+					"pathName": "pages/type10/type10",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type11",
+					"pathName": "pages/type11/type11",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type12",
+					"pathName": "pages/type12/type12",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type13",
+					"pathName": "pages/type13/type13",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type14",
+					"pathName": "pages/type14/type14",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type15",
+					"pathName": "pages/type15/type15",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type16",
+					"pathName": "pages/type16/type16",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type17",
+					"pathName": "pages/type17/type17",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type18",
+					"pathName": "pages/type18/type18",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "model01",
+					"pathName": "pages/model01/model01",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "demo",
+					"pathName": "pages/demo/demo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type19",
+					"pathName": "pages/type19/type19",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "type20",
+					"pathName": "pages/type20/type20",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "demo2",
+					"pathName": "pages/demo2/demo2",
+					"query": ""
+				}
+			]
+		}
+	}
+}

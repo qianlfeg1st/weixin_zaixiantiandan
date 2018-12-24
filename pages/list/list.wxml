@@ -1,0 +1,63 @@
+<view style="height: {{ 750 / stemInfo.windowWidth * stemInfo.windowHeight }}rpx;">
+  <view class="header">
+
+    <view class="selector" bindtap="showCity">
+      <view class="selector__left">
+        <text>{{ selectorCity ? selectorCity : '请选择城市' }}</text>
+      </view>
+      <view class="selector__right">
+        <view></view>
+      </view>
+    </view>
+
+    <view class="location">
+      <view class="location__title">当前定位城市</view>
+      <view class="location__wrap">
+        <view class="location__left">{{ city }}</view>
+        <view class="location__right" bindtap="getLocation">
+          <view class="location__rightText">重新定位</view>
+        </view>
+      </view>
+    </view>
+
+     
+  </view>
+
+  <!-- <view class="line"></view>  -->
+
+  <scroll-view scroll-y="true" style="height: {{ 750 / stemInfo.windowWidth * stemInfo.windowHeight - 270 }}rpx;" scroll-into-view="{{ scrollIntoView }}">
+    <view wx:if="{{ !cityData }}">
+      <view class="city__item" wx:for="{{ cityArray }}" wx:key="key">
+        <view id="{{ index === 0 ? items : '' }}" class="{{ index === 0 ? 'city__itemType' : 'city__itemName' }}" wx:for="{{ item }}" wx:for-item="items" wx:key="key" wx:for-index="index" data-city="{{ items }}" bindtap="{{ index === 0 ? '' : 'setCity' }}">{{ items }}</view>
+      </view>
+      <view class="nav" style="height: {{ 750 / stemInfo.windowWidth * stemInfo.windowHeight - 270 }}rpx;">
+        <view data-name="A" bindtap="changScroll">A</view>
+        <view data-name="B" bindtap="changScroll">B</view>
+        <view data-name="C" bindtap="changScroll">C</view>
+        <view data-name="D" bindtap="changScroll">D</view>
+        <view data-name="E" bindtap="changScroll">E</view>
+        <view data-name="F" bindtap="changScroll">F</view>
+        <view data-name="G" bindtap="changScroll">G</view>
+        <view data-name="H" bindtap="changScroll">H</view>
+        <view data-name="J" bindtap="changScroll">J</view>
+        <view data-name="K" bindtap="changScroll">K</view>
+        <view data-name="L" bindtap="changScroll">L</view>
+        <view data-name="M" bindtap="changScroll">M</view>
+        <view data-name="N" bindtap="changScroll">N</view>
+        <view data-name="P" bindtap="changScroll">P</view>
+        <view data-name="Q" bindtap="changScroll">Q</view>
+        <view data-name="R" bindtap="changScroll">R</view>
+        <view data-name="S" bindtap="changScroll">S</view>
+        <view data-name="T" bindtap="changScroll">T</view>
+        <view data-name="W" bindtap="changScroll">W</view>
+        <view data-name="X" bindtap="changScroll">X</view>
+        <view data-name="Y" bindtap="changScroll">Y</view>
+        <view data-name="Z" bindtap="changScroll">Z</view>
+      </view>
+    </view>
+    <view wx:if="{{ cityData }}">
+      <view class="court">附近法院</view>
+      <view class="court__item" wx:for="{{ cityData }}" wx:key="key" data-courtcode="{{ item.courtcode }}" data-courtname="{{ item.courtname }}" bindtap="setCourt">{{ item.courtname }}</view>
+    </view>
+  </scroll-view>
+</view>

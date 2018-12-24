@@ -1,0 +1,22 @@
+<view class="cases">
+  <view class="case" data-type="type01" bindtap="toInput">民事案件(诉讼状格式)</view>
+  <view class="case" data-type="type20" bindtap="toInput">民事案件(申请书格式)</view>
+  <view class="case" data-type="type02" bindtap="toInput">申请执行案件</view>
+  <view class="case" data-type="type03" bindtap="toInput">诉讼保全案件</view>
+  <view class="case" data-type="type04" bindtap="toInput">个人委托</view>
+  <view class="case" data-type="type05" bindtap="toInput">案外人执行异议案件</view>
+  <view class="case" data-type="type06" bindtap="toInput">案外人执行异议之诉案件</view>
+  <view class="case" data-type="type07" bindtap="toInput">担保书案件</view>
+  <view class="case" data-type="type08" bindtap="toInput">复议申请案件</view>
+  <view class="case" data-type="type09" bindtap="toInput">行政案件</view>
+  <view class="case" data-type="type10" bindtap="toInput">缓交诉讼费申请案件</view>
+  <view class="case" data-type="type11" bindtap="toInput">民事上诉案件</view>
+  <view class="case" data-type="type12" bindtap="toInput">民事再审申请案件</view>
+  <view class="case" data-type="type13" bindtap="toInput">确认调解协议案件</view>
+  <view class="case" data-type="type14" bindtap="toInput">实现担保物权案件</view>
+  <view class="case" data-type="type15" bindtap="toInput">诉前或仲裁案件</view>
+  <view class="case" data-type="type16" bindtap="toInput">刑事通用案件</view>
+  <view class="case" data-type="type17" bindtap="toInput">支付令案件</view>
+  <view class="case" data-type="type18" bindtap="toInput">执行异议案件</view>
+  <view class="case" data-type="type19" bindtap="toInput">申请执行人执行异议之诉案件</view>
+</view>

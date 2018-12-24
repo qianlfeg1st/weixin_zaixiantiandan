@@ -1,0 +1,16 @@
+<!-- <view wx:if="{{ showBody }}"> -->
+<view>
+  <view class="box">
+    <input class="input" type="idcard" placeholder="请输入手机号" type="text" placeholder-class="inputHolder" bindinput="inputPhone"  value="{{  }}" />
+    <button class="postBtn" type="primary" bindtap="getData">开始查询</button>
+  </view>
+  <view wx:for="{{ data }}" wx:key="key" wx:for-index="index" style="margin: 60rpx 0 0 0;">
+    <view class="list" >
+      <view class="list__title">案号：{{ item.code }}</view>
+      <view class="list__type">类型：{{ item.booktype }}</view>
+      <!-- <view class="list__phone">电话：{{ item.phone }}</view> -->
+      <view class="list__date">提交日期：{{ item.createtime }}</view>
+    </view>
+    <view class="line" wx:if="{{ data.length !== index + 1 }}"></view>
+  </view>
+</view>

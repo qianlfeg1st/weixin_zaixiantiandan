@@ -1,0 +1,6 @@
+<view class="models">
+  <view class="model" wx:for="{{ data }}" wx:key="key">
+    <image bindtap="previewImage" class="model__img" mode="aspectFit" src="{{ item.image }}" data-src="{{ item.image }}"></image>
+    <view class="model__text">{{ item.name }}</view>
+  </view>
+</view>
